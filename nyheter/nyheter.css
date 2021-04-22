@@ -4,7 +4,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 150px 1fr 60px 150px auto;
-    grid-template-rows: 90px 64px 350px 300px 300px;
+    grid-template-rows: 90px 64px 250px 300px 300px;
     grid-template-areas:
         "header header header header header"
         "nav nav nav nav nav"
@@ -69,6 +69,10 @@ li > a {
     padding: 15px;
 }
 
+.lys {
+    background-color: darkslategray ;
+}
+
 li:hover {
     background-color: black;
     cursor: pointer;
@@ -76,9 +80,8 @@ li:hover {
 /*Bild*/
 .bild {
     grid-area: bild;
-    background-color: lightgray;
+    background-color: blue;
     margin: 0 5rem;
-    margin-left: 170px;
 }
 
 .content {
@@ -91,8 +94,6 @@ li:hover {
     margin: 5rem;
     height: 300px;
     margin-top: 25px;
-    margin-left: 150px;
-    margin-right: 150px;
 }
 
 /*global sidobar*/
@@ -100,19 +101,13 @@ li:hover {
     grid-area: right_content;
     background-color: rgba(0, 0, 0, 0.2);
     font-size: 15px;
-    height: 780px;
+    height: 605px;
 }
 
 /*global sidobar*/
 .sidobar {
     grid-area: sidobar;
-    background-color: white;
-    height: 780px;
-}
-
-.sidobar_toggle {
-    display: flex;
-    
+    background-color: purple;
 }
 
 /*Global footer*/
@@ -123,4 +118,6 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
 }
+
+
 
