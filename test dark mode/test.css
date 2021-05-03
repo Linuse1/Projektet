@@ -15,6 +15,10 @@ body {
     background-color: lightgray;
 }
 
+body.dark {
+    background-color: darkblue;
+}
+
 /*Global header*/
 header {
     display: flex;
@@ -28,7 +32,7 @@ header {
 }
 
 header > a {
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 15px;
 }
@@ -148,16 +152,12 @@ li:hover {
 }
 
 /* Global Dark mode toggle*/
-button {
-    padding: 20px ;
-    margin-left: 30px;
-    margin-top: 80px;
-    background-color: gray;
-    border-radius: 4px;
-}
-
-button:hover {
-    cursor: pointer;
+.button {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    margin-left: 50px;
 }
 
 
