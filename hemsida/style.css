@@ -13,6 +13,12 @@ body {
         "footer footer footer footer footer";
     /* gap: 1rem 2rem; */ /* gap = row column */
     background-color: lightgray;
+    transition: 0.3s;
+}
+
+body.dark {
+    background-color: #202020;
+    transition: 0.3s;
 }
 
 /*Global header*/
@@ -27,10 +33,21 @@ header {
     font-size: 50px;
 }
 
+.dark header {
+    background: #202020;
+    transition: 0.3s;
+    color: white;
+}
+
 header > a {
     color: black;
     text-decoration: none;
     padding: 15px;
+}
+
+.dark header > a {
+    color: white;
+    transition: 0.3s;
 }
 
 header > p {
@@ -51,6 +68,10 @@ nav > ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+.dark nav {
+    background-color: #606060;
 }
 
 li {
@@ -79,6 +100,7 @@ li:hover {
     background-color: lightgray;
     margin: 0 5rem;
     margin-left: 170px;
+    width: 400px;
 }
 
 .content {
@@ -95,12 +117,23 @@ li:hover {
     margin-right: 150px;
 }
 
+.dark .content {
+    background-color: #606060;
+    color: black  ;
+}
+
 /*global höger content*/
 .right_content {
     grid-area: right_content;
     background-color: rgba(0, 0, 0, 0.2);
     font-size: 15px;
     height: 550px;
+    padding: 3px
+}
+
+.dark .right_content {
+    background-color: #606060;
+    transition: 0.3s;
 }
 
 /*global sidobar*/
@@ -110,10 +143,17 @@ li:hover {
     left: -200px;
     width: 200px;
     height: 550px;
+    transition: 0.3s;
+}
+
+.dark .sidobar {
+    background-color: #606060;
+    transition: 0.3s;
 }
 
 .sidobar__open {
     left: 0;
+    transition: 0.3s;
 }
 
 .sidobar__toggle {
@@ -127,6 +167,11 @@ li:hover {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dark .sidobar__toggle {
+    background-color: #606060;
+    transition: 0.3s;
 }
 
 .sidobar__toggle:hover {
@@ -148,18 +193,19 @@ li:hover {
 }
 
 /* Global Dark mode toggle*/
-button {
-    padding: 20px ;
+.button {
+    display: flex;
+    height: 50px;
+    width: 100px;
+    background-color: #202020;
     margin-left: 30px;
-    margin-top: 80px;
-    background-color: gray;
-    border-radius: 4px;
+    margin-top: 70px;
+    color: lightgray;
 }
 
-button:hover {
+.button:hover {
     cursor: pointer;
 }
-
 
 /*Global footer*/
 footer {
@@ -170,3 +216,7 @@ footer {
     padding: 30px;
 }
 
+.dark footer {
+    background-color: #606060;
+    transition: 0.3s;
+}

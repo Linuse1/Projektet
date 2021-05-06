@@ -16,7 +16,7 @@ body {
 }
 
 body.dark {
-    background-color: darkblue;
+    background-color: #696969;
 }
 
 /*Global header*/
@@ -83,7 +83,9 @@ li:hover {
     background-color: lightgray;
     margin: 0 5rem;
     margin-left: 170px;
+    width: 400px;
 }
+
 
 .content {
     grid-area: text;
