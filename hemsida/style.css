@@ -91,7 +91,7 @@ li > a {
 }
 
 li:hover {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
     cursor: pointer;
   }
 /*Bild*/
@@ -219,4 +219,11 @@ footer {
 .dark footer {
     background-color: #606060;
     transition: 0.3s;
+}
+
+/*Storlekar */
+@media all and (max-width: 1170px) {
+    .content {
+        background-color: red;
+    }
 }
