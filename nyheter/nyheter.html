@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="nyheter.css">
-</head>
-<body>
-    <header><a href="hemsida.html">Placeholder</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="nyheter.css" />
+    </head>
+    <body>
+    
+
+        <header><a href="hemsida.html">Sveriges Nyheter</a>
         <p>
             Sveriges mest trovärdiga nyhetssajt
         </p>
     </header>
         <nav>
             <ul>
-                <li class="lys"><a href="nyheter.html">Nyheter</a></li>
+                <li><a href="nyheter.html">Nyheter</a></li>
                 <li><a href="sport.html">Sport</a></li>
                 <li><a href="nöje.html">Nöje</a></li>
-                <li><a href="film.html">Film</a></li>
+                <li><a href="lokalt.html">Lokalt</a></li>
             </ul>
         </nav>
-        <div class="bild">
-            
+            <div class="bild">
+                <img src="https://images.unsplash.com/photo-1546422904-90eab23c3d7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" alt="Man kollar på nyheter" width="650" height="350">
+            </div>
+        <div class="content"><b>Ökningen av falska nyheter</b>
+            <p>Under de senaste tre åren så har mängden av falska nyheter som har spridits ökat med över 300% jämfört med åren innan. Detta är något väldigt rejält och kan förstöra väldigt mycket inom politik bland annat. Det kan hända att någon säger en sak som låter trovärdigt fast är vilket sedan sprids vidare från person till person vilket kan skapa mängder av falska nyheter.</p>
+            <p>Som tur är så är vi på Sveriges Nyheter väldigt trovärdiga och har aldrig spridit någon falsk artikel och har därför inte bidragit till denna ökade mängd av falska nyheter. </p></div>
+        <div class="right_content">
+            <b>Relaterade Nyheter:</b>
+            <p>Man hittad mördad utanför McDonalds i Stockholm</p>
+            <p></p>
+            <p>Corona viruset är nu helt under kontroll i flera städer</p>
+
         </div>
-        <div class="content"><p></p></div>
-        <div class="right_content">Relaterade Nyheter:</div>
-        <div class="sidobar">Sidobar</div>
+        <class class="sidobar" id="nav">
+            <p><a href="#">Information</a></p>
+            <p><a href="#">Service</a></p>
+            <p><a href="#">Anställningar</a></p>
+             <div class="sidobar__toggle" id="navbutton">
+                Tryck här!
+            </div>        
+            <div class="knapp">
+                <input type="button" class="button" id="button" value="Dark mode">
+            </div>
+        </class>
+
         <footer>
-            Kontaktuppgifter 
-        <p>Telefon: <i>#######</i> </p>
-        <p>E-Post: <i>#####@#####.com</i></p>
+            Kontaktuppgifter: 
+        <p>Telefon: <i>46892364589</i> </p>
+        <p>E-Post: <i>sverigesnyheter@gmail.com</i></p>
         </footer>
-</body>
+
+        <script src="nyheter.js"></script>
+
+    </body>
 </html>

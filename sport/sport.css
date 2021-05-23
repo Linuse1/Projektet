@@ -84,7 +84,6 @@ nav > ul {
     margin: 0;
     padding: 0;
     overflow: hidden; 
-    margin-left: 280px;
 }
 
 .dark nav {
@@ -144,6 +143,10 @@ li:hover {
     /* max-width: 1200px; */
 }
 
+.content > b {
+    text-decoration: underline;
+}
+
 .dark .content {
     background-color: #606060;
     color: black  ;
@@ -158,6 +161,20 @@ li:hover {
     padding: 3px;
     position: relative;
 }
+
+.right_content > p {
+    text-decoration: underline;
+}
+
+.right_content > p:hover {
+    cursor: pointer;
+}
+
+.right_content > p:last-child {
+    margin-top: 30px;
+}
+
+
 
 .dark .right_content {
     background-color: #606060;
@@ -287,7 +304,6 @@ footer {
     " footer"
     
     ;    
-        background: deeppink;
         
         min-height: 100vh;
     }
@@ -298,9 +314,14 @@ footer {
 
     .sidobar {
         background-color: gray;
+        margin-top: 50px;
     }
 
     .sidobar__toggle {
         background-color: gray;
+    }
+
+    .sidobar__open {
+        margin-top: 50px;
     }
 }

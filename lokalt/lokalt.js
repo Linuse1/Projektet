@@ -13,7 +13,7 @@ document.addEventListener("keydown",function(event){
         nav.classList.toggle("sidobar__open")
     }
 
-});
+})
 
 const button = document.getElementById('button'); 
 
